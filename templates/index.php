@@ -8,4 +8,4 @@ Util::addScript(OCA\AppTemplate\AppInfo\Application::APP_ID, 'main');
 
 ?>
 
-<div id="app-template"></div>
+<div id="app_template"></div>

@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.3",
     "info": {
-        "title": "app-template",
+        "title": "app_template",
         "version": "0.0.1",
         "description": "An example summary",
         "license": {
@@ -47,7 +47,7 @@
         }
     },
     "paths": {
-        "/ocs/v2.php/apps/app-template/api": {
+        "/ocs/v2.php/apps/app_template/api": {
             "get": {
                 "operationId": "api-index",
                 "summary": "An example API endpoint",

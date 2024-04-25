@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
-	<id>app-template</id>
+	<id>app_template</id>
 	<name>App Template</name>
 	<summary>An example summary</summary>
 	<description>An example description</description>
@@ -16,9 +16,9 @@
 	</dependencies>
 	<navigations>
 		<navigation>
-			<id>app-template</id>
+			<id>app_template</id>
 			<name>App Template</name>
-			<route>app-template.page.index</route>
+			<route>app_template.page.index</route>
 			<icon>app.svg</icon>
 			<type>link</type>
 		</navigation>
