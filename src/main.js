@@ -3,4 +3,4 @@ import App from './App.vue'
 Vue.mixin({ methods: { t, n } })
 
 const View = Vue.extend(App)
-new View().$mount('#app-template')
+new View().$mount('#app_template')

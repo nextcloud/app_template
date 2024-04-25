@@ -10,7 +10,7 @@ use OCP\AppFramework\Bootstrap\IBootstrap;
 use OCP\AppFramework\Bootstrap\IRegistrationContext;
 
 class Application extends App implements IBootstrap {
-	public const APP_ID = 'app-template';
+	public const APP_ID = 'app_template';
 
 	/** @psalm-suppress PossiblyUnusedMethod */
 	public function __construct() {
