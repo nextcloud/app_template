@@ -9,7 +9,7 @@
 	<licence>agpl</licence>
 	<author>Example</author>
 	<namespace>AppTemplate</namespace>
-	<category>example</category>
+	<category>customization</category>
 	<bugs>https://example.com/bugs</bugs>
 	<dependencies>
 		<nextcloud min-version="29" max-version="29"/>
