@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f252cf6ba260cfa0b458a07a813251f",
+    "content-hash": "d837501583aedaac85e3533adb9ce384",
     "packages": [
         {
             "name": "bamarni/composer-bin-plugin",
@@ -1064,8 +1064,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roave/security-advisories": 20,
-        "nextcloud/ocp": 20
+        "nextcloud/ocp": 20,
+        "roave/security-advisories": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
