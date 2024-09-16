@@ -11,6 +11,9 @@
 	<namespace>AppTemplate</namespace>
 	<category>customization</category>
 	<bugs>https://example.com/bugs</bugs>
+	<donation title="Donate to the developers with PayPal" type="paypal">https://paypal.com/example</donation>
+	<donation type="stripe">https://stripe.com/example</donation>
+	<donation>https://other.service.com/example</donation>
 	<dependencies>
 		<nextcloud min-version="29" max-version="30"/>
 	</dependencies>
