@@ -9,8 +9,8 @@ use OCA\AppTemplate\Controller\ApiController;
 use OCP\IRequest;
 use PHPUnit\Framework\TestCase;
 
-class ApiTest extends TestCase {
-	public function testIndex() {
+final class ApiTest extends TestCase {
+	public function testIndex(): void {
 		$request = $this->createMock(IRequest::class);
 		$controller = new ApiController(Application::APP_ID, $request);
 
