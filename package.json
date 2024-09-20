@@ -7,12 +7,13 @@
     "npm": "^10.0.0"
   },
   "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack.js --progress",
-    "dev": "NODE_ENV=development webpack --config webpack.js --progress",
-    "watch": "NODE_ENV=development webpack --config webpack.js --progress --watch",
+    "build": "vite build",
+    "dev": "vite --mode development build",
+    "watch": "vite --mode development build --watch",
     "lint": "eslint src",
     "stylelint": "stylelint src/**/*.vue src/**/*.scss src/**/*.css"
   },
+  "type": "module",
   "browserslist": [
     "extends @nextcloud/browserslist-config"
   ],
@@ -24,8 +25,7 @@
     "@nextcloud/browserslist-config": "^3.0.1",
     "@nextcloud/eslint-config": "^8.4.1",
     "@nextcloud/stylelint-config": "^3.0.1",
-    "@nextcloud/webpack-vue-config": "^6.0.1",
-    "eslint-webpack-plugin": "^4.2.0",
-    "stylelint-webpack-plugin": "^5.0.1"
+    "@nextcloud/vite-config": "^1.4.2",
+    "vite": "^5.4.6"
   }
 }
