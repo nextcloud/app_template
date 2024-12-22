@@ -1,12 +1,6 @@
 {
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/nextcloud/openapi-extractor"
-		}
-	],
 	"require-dev": {
-		"nextcloud/openapi-extractor": "dev-main"
+		"nextcloud/openapi-extractor": "v1.3.0"
 	},
 	"config": {
 		"platform": {
