@@ -1,6 +1,6 @@
 {
 	"require-dev": {
-		"nextcloud/openapi-extractor": "v1.3.0"
+		"nextcloud/openapi-extractor": "v1.4.0"
 	},
 	"config": {
 		"platform": {
