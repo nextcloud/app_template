@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "@nextcloud/vue": "^8.31.0",
-    "vue": "^2.7.16"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@nextcloud/browserslist-config": "^3.0.1",
