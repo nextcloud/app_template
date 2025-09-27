@@ -1,39 +1,9 @@
 version: 2
 updates:
   - package-ecosystem: composer
-    directory: "/"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
-    open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/vendor-bin/cs-fixer"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
-    open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/vendor-bin/openapi-extractor"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
-    open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/vendor-bin/phpunit"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
-    open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/vendor-bin/psalm"
+    directories:
+      - "/"
+      - "/vendor-bin/*"
     schedule:
       interval: weekly
       day: saturday
