@@ -1,26 +1,18 @@
+<script setup lang="ts">
+import NcAppContent from '@nextcloud/vue/components/NcAppContent'
+import NcContent from '@nextcloud/vue/components/NcContent'
+</script>
+
 <template>
 	<NcContent app-name="app_template">
-		<NcAppContent>
+		<NcAppContent :class="$style.content">
 			<h2>Hello world!</h2>
 		</NcAppContent>
 	</NcContent>
 </template>
 
-<script>
-
-import { NcAppContent, NcContent } from '@nextcloud/vue'
-
-export default {
-	name: 'App',
-	components: {
-		NcContent,
-		NcAppContent,
-	},
-}
-</script>
-
-<style scoped lang="scss">
-main {
+<style module>
+.content {
 	display: flex;
 	justify-content: center;
 	margin: 16px;
