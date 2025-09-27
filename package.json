@@ -2,18 +2,14 @@
   "name": "app_template",
   "version": "1.0.0",
   "license": "AGPL-3.0-or-later",
-  "engines": {
-    "node": "^22.0.0",
-    "npm": "^10.5.0"
-  },
+  "type": "module",
   "scripts": {
     "build": "vite build",
     "dev": "vite --mode development build",
-    "watch": "vite --mode development build --watch",
     "lint": "eslint src",
-    "stylelint": "stylelint src/**/*.vue src/**/*.scss src/**/*.css"
+    "stylelint": "stylelint src/**/*.vue src/**/*.scss src/**/*.css",
+    "watch": "vite --mode development build --watch"
   },
-  "type": "module",
   "browserslist": [
     "extends @nextcloud/browserslist-config"
   ],
@@ -26,6 +22,12 @@
     "@nextcloud/eslint-config": "^8.4.2",
     "@nextcloud/stylelint-config": "^3.1.0",
     "@nextcloud/vite-config": "^2.5.0",
+    "@vue/tsconfig": "^0.8.1",
+    "typescript": "^5.9.2",
     "vite": "^7.1.7"
+  },
+  "engines": {
+    "node": "^22.0.0",
+    "npm": "^10.5.0"
   }
 }
