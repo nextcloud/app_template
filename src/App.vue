@@ -1,24 +1,26 @@
 <template>
-	<NcAppContent>
-		<div id="app_template">
-			<h1>Hello world!</h1>
-		</div>
-	</NcAppContent>
+	<NcContent app-name="app_template">
+		<NcAppContent>
+			<h2>Hello world!</h2>
+		</NcAppContent>
+	</NcContent>
 </template>
 
 <script>
-import NcAppContent from '@nextcloud/vue/dist/Components/NcAppContent.js'
+
+import { NcAppContent, NcContent } from '@nextcloud/vue'
 
 export default {
 	name: 'App',
 	components: {
+		NcContent,
 		NcAppContent,
 	},
 }
 </script>
 
 <style scoped lang="scss">
-#app_template {
+main {
 	display: flex;
 	justify-content: center;
 	margin: 16px;
