@@ -9,7 +9,7 @@ return RectorConfig::configure()
 		__DIR__ . '/lib',
 		__DIR__ . '/tests',
 	])
-	->withPhpSets(php80: true)
+	->withPhpSets(php81: true)
 	->withPreparedSets(
 		deadCode: true,
 		codeQuality: true,
@@ -19,12 +19,9 @@ return RectorConfig::configure()
 		instanceOf: true,
 		earlyReturn: true,
 		strictBooleans: true,
-		carbon: true,
 		rectorPreset: true,
 		phpunitCodeQuality: true,
 		doctrineCodeQuality: true,
 		symfonyCodeQuality: true,
 		symfonyConfigs: true,
-		twig: true,
-		phpunit: true,
 	);
