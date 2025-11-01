@@ -1,0 +1,25 @@
+# Do not read other .editorconfig files higher in the folder hierarchy
+root = true
+
+# Styles applied to all languages
+[*]
+end_of_line = lf
+indent_style = tab
+tab_width = 4
+charset = utf-8
+spelling_language = en
+
+# Non-canonical rules, may not be supported by some editors
+max_line_length = 80
+quote_type = single
+
+[*.html]
+quote_type = double
+
+[*.vue]
+# Vue files may contain a mix of HTML (double quote) and JS (single quote), better not to enforce anything
+quote_type = unset
+
+# Don't force English spellcheck for translations
+[l10n/**]
+spelling_language = unset
