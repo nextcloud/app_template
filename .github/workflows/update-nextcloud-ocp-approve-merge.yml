@@ -25,7 +25,7 @@ concurrency:
 jobs:
   auto-approve-merge:
     if: github.actor == 'nextcloud-command'
-    runs-on: ubuntu-latest-low
+    runs-on: ubuntu-latest
     permissions:
       # for hmarr/auto-approve-action to approve PRs
       pull-requests: write
