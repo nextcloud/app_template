@@ -6,7 +6,7 @@
 	<summary>An example summary</summary>
 	<description>An example description</description>
 	<version>1.0.0</version>
-	<licence>agpl</licence>
+	<licence>AGPL-3.0-or-later</licence>
 	<author mail="example@example.com" homepage="https://example.com">Example</author>
 	<namespace>AppTemplate</namespace>
 	<category>customization</category>
