@@ -1,0 +1,42 @@
+diff --git a/.github/workflows/appstore-build-publish.yml b/.github/workflows/appstore-build-publish.yml
+--- a/.github/workflows/appstore-build-publish.yml
++++ b/.github/workflows/appstore-build-publish.yml
+@@ -1,4 +1,5 @@
+-# This workflow is provided via the organization template repository
++# Based on the organization template repository, adapted for community apps
++# (no nextcloud-releases owner check).
+ #
+ # https://github.com/nextcloud/.github
+ # https://docs.github.com/en/actions/learn-github-actions/sharing-workflows-with-your-organization
+@@ -15,13 +16,16 @@
+ permissions:
+   contents: write
+ 
++env:
++  # Must match appinfo/info.xml <id> and the certificate folder name in
++  # nextcloud/app-certificate-requests (not necessarily the GitHub repo name).
++  APP_NAME: app_template
++
+ jobs:
+   build_and_publish:
++    environment: release
+     runs-on: ubuntu-latest
+ 
+-    # Only allowed to be run on nextcloud-releases repositories
+-    if: ${{ github.repository_owner == 'nextcloud-releases' }}
+-
+     steps:
+       - name: Check actor permission
+         uses: skjnldsv/check-actor-permission@69e92a3c4711150929bca9fcf34448c5bf5526e7 # v3.0
+@@ -29,10 +33,7 @@
+           require: write
+ 
+       - name: Set app env
+-        run: |
+-          # Split and keep last
+-          echo "APP_NAME=${GITHUB_REPOSITORY##*/}" >> $GITHUB_ENV
+-          echo "APP_VERSION=${GITHUB_REF##*/}" >> $GITHUB_ENV
++        run: echo "APP_VERSION=${GITHUB_REF##*/}" >> $GITHUB_ENV
+ 
+       - name: Checkout
+         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
