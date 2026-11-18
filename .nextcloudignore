@@ -24,4 +24,6 @@
 /vite.config.ts
 /vendor-bin
 /vendor/bin
+# The App Store reads the release notes from CHANGELOG.md inside the archive.
 /*.md
+!/CHANGELOG.md
